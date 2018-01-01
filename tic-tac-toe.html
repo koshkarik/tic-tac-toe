@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<div class="board">
+		<div class="menu">
+			<h1 class="title">TicTacToe</h1>
+			<div class="playerNumb">
+				<h2>Choose the number of players</h2>
+				<button class="one" data-numb="1">One Player</button>
+				<button class="two" data-numb="2">Two Players</button>
+			</div>
+			<div class="difficulty hidden">
+				<h2>Choose the difficulty</h2>
+				<div class="dif-buttons ">
+					<button class="easy" data-diff="0">medium</button>
+					<button class="medium" data-diff="1">hard</button>
+					<button class="unbeatable" data-diff="2">hard</button>
+					
+				</div>
+				
+			</div>
+			<div class="symbolChoice hidden">
+				<h2>Would you like X or O</h2>
+				<button class="one" data-symbol="x">X</button>
+				<button class="two" data-symbol="o">O</button>
+			</div>
+		</div>
+		<canvas class="game" width="400" height="400"></canvas>
+	</div>
+	<div class="wrap">
+		<div class="game-info hidden">Player turn</div>
+		<button class="back hidden">Back To Menu</button>
+	</div>
+	
+
+	<script type="text/javascript" src="main.js"></script>	
+	<script type="text/javascript" src="game.js"></script>	
+	<script type="text/javascript" src="drawing.js"></script>
+	<script type="text/javascript" src="inputCode.js"></script>	
+
+
+
+</body>
+</html>
